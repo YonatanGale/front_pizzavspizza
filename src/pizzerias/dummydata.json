@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "pizzeria": "Bravo Pizza",
+        "city": "New York"
+    },
+    {
+        "id": 2,
+        "pizzeria": "Artichoke Basille's Pizza",
+        "city": "New York"
+    },
+    {
+        "id": 3,
+        "pizzeria": "Pizzeria dos",
+        "city": "Chicago"
+    }
+]
