@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <image style={styles.pizzaImage}
+            souerce= {{
+              uri: "http://bit.ly/book-pizza",
+            }}/>
+      <Text style={styles.baseText}>Pizzeria</Text>
+      <text style={styles.newText}>Todas las pizzas</text>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,5 +22,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  baseText: {
+    color: "navy",
+    fontSize: 30,
+    fontStyle: "italic",
+  },
+  newText: {
+    color: "red",
+  },
+  pizzaImage: {
+    width: 200,
+    height: 200,
   },
 });
